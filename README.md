@@ -17,11 +17,11 @@ To achieve this system requirement, we need some core components:
 * We will create a remote library from PRC call, an application library for validation/mine in blockchain, and a consensus library for managing clients status.
 * We will use Java as the programming language of our work. 
 * We will need some third party packages:  
-** java.io.ByteArrayOutputStream for reading from the encoded bytes in blockchain  
-** java.util.Base64 for network encoding/decoding  
-** org.json.JSONObject and org.json.JSONArray to read from the json format string in blockchain requests  
-** java.net.* from read/write from socket  
-** java.lang.reflect.Method, java.lang.reflect.Type from RPC reflections  
+'java.io.ByteArrayOutputStream' for reading from the encoded bytes in blockchain  
+'java.util.Base64' for network encoding/decoding  
+'org.json.JSONObject' and 'org.json.JSONArray' to read from the json format string in blockchain requests  
+'java.net.*' from read/write from socket  
+'java.lang.reflect.Method', 'java.lang.reflect.Type' from RPC reflections  
 ## test cases:
 * Block chain tests: bad timestamps order, bad hashing, mismatched blockid, etc.
 * Consensus tests: leader election, leader reelection, peer failure, peer majority failure, etc.
