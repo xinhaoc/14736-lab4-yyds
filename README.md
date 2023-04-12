@@ -4,8 +4,8 @@ Lab4 proposal
 ## selected option:
 Option IV: Implement Proof-of-Work Blockchain Consensus
 ## high-level description:
-The system is a distributed implementation of the POW algorithm for blockchain consensus.
-System high-level functions:
+The system is a distributed implementation of the POW algorithm for blockchain consensus.  
+System high-level functions:  
 Peers will automatically generate new transactions, the transactions will be broadcasted to all peers in the system, the one who first validates the transaction will add the new block and get a mining reward.
 We will use rpc as a remote call library, and also a byzantine fault-tolerant consensus mechanism.
 ## design requirements:
