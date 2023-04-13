@@ -9,7 +9,7 @@ Peers will automatically generate new transactions, the transactions will be bro
 We will use rpc as a remote call library, and also a byzantine fault-tolerant consensus mechanism.
 ## design requirements:
 To achieve this system requirement, we need some core components:
-* a consensus manager to manage the clients status, includes their local entries(block chain objects)
+* a consensus manager to manage the clients status, includes their local entries(block chain objects), and control the vote process.
 * a function to calculate the pow using SHA-256, prove whether the received object is a valid block chain.
 * a function to calculate a new transactions and append to the previous block chain
 * a function to reward the client who “mine” the new block
