@@ -10,9 +10,10 @@ We will use rpc as a remote call library, and also a byzantine fault-tolerant co
 ## design requirements:
 To achieve this system requirement, we need some core components:
 * a consensus manager to manage the clients status, includes their local entries(block chain objects), and control the vote process.
+* A competition mechanism determines that there is only one peer that calculates the result first。
 * a function to calculate the pow using SHA-256, prove whether the received object is a valid block chain.
-* a function to calculate a new transactions and append to the previous block chain
-* a function to reward the client who “mine” the new block
+* a function to calculate a new transactions and append to the previous block chain。
+* a function to reward the client who “mine” the new block。
 ## approach:
 * We will create a remote library from PRC call, an application library for validation/mine in blockchain, and a consensus library for managing clients status.
 * We will use Java as the programming language of our work. 
