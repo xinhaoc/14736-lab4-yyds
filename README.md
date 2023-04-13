@@ -5,7 +5,7 @@ Lab4 proposal
 Option IV: Implement Proof-of-Work Blockchain Consensus
 ## high-level description:
 The system is a distributed implementation of the POW algorithm for blockchain consensus.  
-Peers will automatically generate new transactions, the transactions will be broadcasted to all peers in the system, the one who first validates the transaction will add the new block and get a mining reward.
+Peers will automatically generate new transactions, the transactions will be broadcasted to all peers in the system, the one who first validates the transaction will add the new block and get a mining reward. then we performe a majority vote to decide whether the transaction is approved, then broadcast/or not the new block to all existing peers.
 We will use rpc as a remote call library, and also a byzantine fault-tolerant consensus mechanism.
 ## design requirements:
 To achieve this system requirement, we need some core components:
@@ -25,7 +25,7 @@ To achieve this system requirement, we need some core components:
 ## test cases:
 * Block chain tests: bad timestamps order, bad hashing, mismatched blockid, etc.
 * Consensus tests: leader election, leader reelection, peer failure, peer majority failure, etc.
-* Content tests: idempotent
+* Content tests: idempotent for deduplication request
 
 
 
